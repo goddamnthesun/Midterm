@@ -496,3 +496,10 @@ footer p {
   align-items: center;
   justify-content: center;
 }
+@media (320px <= width <= 640px) {
+  .shop-now,
+  .leather-goods-container,
+  .leather-belts-container {
+    background-position: center bottom;
+  }
+}
