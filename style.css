@@ -325,3 +325,174 @@ li {
   font-style: italic;
   text-decoration: underline;
 }
+.follow-me {
+  margin-top: 15px;
+  background-color: var(--backround-color);
+  width: 100%;
+}
+.follow-me-header-container,
+.follow-me-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.follow-me-header-container p {
+  font-family: var(--poppins);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  width: 190px;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.follow-me-link-container a {
+  font-family: var(--didot);
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+.selling-points {
+  display: grid;
+  grid-template-rows: 80px 80px 80px;
+  background-color: var(--backround-color);
+  color: var(--primary-color);
+}
+.break-other-other {
+  width: 17px;
+  border-bottom: 3px solid var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.point-one,
+.point-two,
+.point-three {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.point-one p,
+.point-two p,
+.point-three p {
+  font-family: var(--didot);
+  font-size: 20px;
+}
+.additional-links-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.additional-links-header h2 {
+  font-size: 31px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--didot);
+  font-style: italic;
+  font-weight: 100;
+  margin-top: 50px;
+  margin-bottom: 65px;
+}
+.shop-links {
+  justify-content: center;
+  align-items: center;
+}
+.shop-links,
+.faq,
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop-links li,
+.faq li,
+.social-links li {
+  margin-bottom: 30px;
+}
+.faq {
+  margin-top: 60px;
+}
+.social-links {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.shop-links a,
+.faq a,
+.social-links a {
+  font-family: var(--roboto);
+  font-size: 15px;
+  color: black;
+}
+.join-us-form {
+  margin-bottom: 65px;
+}
+.form-header {
+  font-family: var(--poppins);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.form-label {
+  width: 260px;
+}
+.form-label label {
+  font-family: var(--roboto);
+  font-size: 16px;
+}
+.form-input input {
+  width: 260px;
+  border: none;
+  border-bottom: 3px solid var(--primary-color);
+  margin-bottom: 15px;
+  padding: 5px;
+}
+.send-btn {
+  color: var(--primary-color);
+  border: solid var(--primary-color) 1px;
+  padding: 18px 50px;
+  width: 260px;
+  background-color: white;
+  font-family: var(--roboto);
+  font-size: 14px;
+}
+input[type="email"]:focus {
+  width: 260px;
+  border: none;
+  border-bottom: 3px solid var(--primary-color);
+  margin-bottom: 15px;
+  padding: 5px;
+  outline: none;
+}
+input[type="email"]:invalid {
+  width: 260px;
+  border: none;
+  border-bottom: 3px solid rgb(253, 41, 42);
+  margin-bottom: 15px;
+  padding: 5px;
+  outline: none;
+}
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: var(--backround-color);
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  font-size: 14px;
+  font-family: var(--roboto);
+  text-align: center;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
