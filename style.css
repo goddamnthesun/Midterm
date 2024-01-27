@@ -1,0 +1,291 @@
+/* font import */
+@import url(https://db.onlinewebfonts.com/c/16efa2896f117dae2debeb23ab4715dd?family=Didot+eText+W01+Italic);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+
+/* variables */
+
+:root {
+  --primary-color: rgba(188, 76, 42, 255);
+  --backround-color: rgba(248, 244, 240, 255);
+  --poppins: "Poppins", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --didot: "Didot eText W01 Italic";
+}
+
+/* reset */
+body,
+a,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icons-list {
+  display: flex;
+  margin: 27px 15px 35px 0px;
+}
+.logos {
+  width: 19px;
+  height: 19px;
+}
+.icons-list-items {
+  margin-left: 1em;
+}
+.cart-menu {
+  display: flex;
+}
+.cart {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.cart a {
+  margin-top: 27px;
+  color: var(--primary-color);
+  font-family: "Roboto", sans-serif;
+}
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.menu input {
+  display: none;
+}
+
+.menu label {
+  margin-bottom: 7px;
+  z-index: 999999;
+}
+.tittle-logo {
+  font-size: 34px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--header-font);
+  font-style: italic;
+  font-weight: 500;
+}
+.shop-now {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 315px;
+  background-color: rgb(180, 180, 180);
+  background-image: url(./photos/bag-holding.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.shop-now-header-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.shop-now-header {
+  font-size: 38px;
+  color: white;
+  font-family: var(--font-thick);
+  letter-spacing: 0.3rem;
+  margin-top: 3rem;
+}
+.shop-now-btn-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.shop-now-btn {
+  color: white;
+  border: solid white 1px;
+  padding: 15px 40px 15px 40px;
+  margin-top: 1rem;
+}
+.best-seller-header-container {
+  display: flex;
+  justify-content: center;
+}
+.best-seller-header {
+  font-family: var(--font-thick);
+  font-size: 21px;
+  letter-spacing: 0.11em;
+  font-weight: 600;
+  margin-top: 47px;
+  margin-bottom: 27px;
+}
+.break-box {
+  display: flex;
+  justify-content: center;
+}
+.break {
+  width: 17px;
+  border-bottom: 3px solid black;
+  margin-bottom: 25px;
+}
+.slider-container {
+  display: grid;
+  grid-template-columns: 1fr 220px 1fr;
+}
+.slider-card {
+  width: 220px;
+  height: 382px;
+}
+.arrow-left-container,
+.arrow-right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.tag-price-container {
+  display: grid;
+  grid-template-rows: 25px 30px;
+  padding: 16px 18px 18px;
+}
+.tag-line,
+.price-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag-line > p {
+  font-family: var(--font-thick);
+  font-size: 16px;
+}
+.price-tag > p {
+  color: var(--primary-color);
+  font-family: var(--header-font);
+  font-style: italic;
+  font-weight: 600;
+}
+.shop-all-btn-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.shop-all-btn {
+  color: var(--primary-color);
+  border: solid var(--primary-color) 1px;
+  padding: 15px 50px;
+  margin-top: 50px;
+  margin-bottom: 59px;
+}
+.other-example {
+  display: grid;
+  grid-template-rows: 355px 374px 355px 374px;
+}
+.leather-goods-container {
+  background-image: url(./photos/leather-goods.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(180, 180, 180);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.leather-goods-link {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.leather-goods-link a {
+  color: white;
+  font-family: var(--font-thick);
+  font-size: 21px;
+  letter-spacing: 0.15rem;
+  text-decoration: underline;
+}
+.leather-belts-container {
+  background-image: url(./photos/leather-belts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(180, 180, 180);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.leather-belts-link {
+  width: 200px;
+  margin-top: 10px;
+}
+.leather-belts-link a {
+  color: white;
+  font-family: var(--font-thick);
+  font-size: 21px;
+  letter-spacing: 0.15rem;
+  text-decoration: underline;
+}
+.leather-goods-example-container {
+  background-color: var(--backround-color);
+}
+.leather-goods-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leather-belts-example-container {
+  background-color: var(--backround-color);
+}
+.leather-belts-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brand-description {
+  display: grid;
+  grid-template-rows: 219px 219px 219px;
+  gap: 15px;
+  color: white;
+}
+.brand-description-card-container-one {
+  background-image: url(./photos/one.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(180, 180, 180);
+  background-blend-mode: multiply;
+  display: grid;
+  grid-template-rows: 75px 35px 45px 64px;
+}
+.brand-description-card-container-two {
+  background-image: url(./photos/two.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(180, 180, 180);
+  background-blend-mode: multiply;
+  display: grid;
+  grid-template-rows: 75px 35px 45px 64px;
+}
+.brand-description-card-container-three {
+  background-image: url(./photos/three.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(180, 180, 180);
+  background-blend-mode: multiply;
+  display: grid;
+  grid-template-rows: 75px 35px 45px 64px;
+}
