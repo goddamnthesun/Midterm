@@ -80,6 +80,10 @@ li {
   margin-bottom: 7px;
   z-index: 999999;
 }
+.tittle-logo-container {
+  display: flex;
+  justify-content: center;
+}
 .tittle-logo {
   font-size: 34px;
   text-align: center;

@@ -1,0 +1,39 @@
+.tittle-logo {
+  margin-bottom: 20px;
+}
+main {
+  padding: 0px 0px 40px;
+}
+.my-cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-cart-header,
+.my-cart,
+.main-page-link {
+  width: 280px;
+}
+.my-cart-header h1 {
+  font-family: var(--roboto);
+  font-size: 28px;
+  font-weight: 300;
+  padding: 10px 0px 16px;
+  border-bottom: 1px gray solid;
+}
+.my-cart {
+  padding: 110px 0px;
+  text-align: center;
+}
+.my-cart p {
+  font-family: var(--roboto);
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.my-cart a {
+  font-size: 18px;
+  font-family: var(--roboto);
+  color: black;
+  text-decoration: underline;
+}
