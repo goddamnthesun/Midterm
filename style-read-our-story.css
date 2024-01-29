@@ -17,7 +17,8 @@
   height: 218px;
   justify-content: center;
 }
-.the-brand-container {
+.the-brand-container,
+.the-brand-container-two {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,4 +42,74 @@
   text-align: center;
   margin-bottom: 40px;
   padding: 0px 30px;
+}
+.big-photo {
+  display: none;
+}
+@media (320px <= width) {
+  .photo-two,
+  .photo-one {
+    background-color: var(--backround-color);
+  }
+  .big-photo {
+    display: none;
+  }
+}
+
+@media (480px <= width) {
+  .the-brand-text {
+    max-width: 480px;
+  }
+  .the-brand-text p {
+    font-size: 20px;
+  }
+  .photo-two,
+  .photo-one {
+    background-color: var(--backround-color);
+  }
+  .big-photo {
+    display: none;
+  }
+}
+@media (960px <= width) {
+  .main-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60vh 60vh;
+  }
+  .the-brand-container,
+  .the-brand-container-two {
+    justify-content: center;
+  }
+  .the-brand-container {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  .photo-one {
+    grid-column: 2/3;
+    background-image: url(./photos/scroll-animation-1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+  }
+  .photo-two {
+    background-image: url(./photos/scroll-animation-2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+  }
+  .small-photo {
+    display: none;
+  }
+  .photo-one,
+  .photo-two {
+    height: 45vh;
+  }
+  .big-photo {
+    display: block;
+  }
 }
