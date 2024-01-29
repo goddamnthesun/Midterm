@@ -49,8 +49,8 @@ li {
   margin: 27px 15px 35px 0px;
 }
 .logos {
-  width: 19px;
-  height: 19px;
+  width: 1.188rem;
+  height: 1.188rem;
 }
 .icons-list-items {
   margin-left: 1em;
@@ -96,7 +96,11 @@ li {
   font-weight: 100;
   margin-bottom: 20px;
 }
-
+.shop-now-container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--backround-color);
+}
 .shop-now {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -206,7 +210,13 @@ li {
 }
 .other-example {
   display: grid;
+  width: 100%;
   grid-template-rows: 355px 374px 355px 374px;
+}
+.leather-goods-container-container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--backround-color);
 }
 .leather-goods-container {
   background-image: url(./photos/leather-goods.png);
@@ -218,6 +228,8 @@ li {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  width: 100%;
 }
 .leather-goods-link {
   width: 200px;
@@ -232,6 +244,11 @@ li {
   letter-spacing: 0.15rem;
   text-decoration: underline;
 }
+.leather-belts-container-container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--backround-color);
+}
 .leather-belts-container {
   background-image: url(./photos/leather-belts.png);
   background-repeat: no-repeat;
@@ -242,6 +259,7 @@ li {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 .leather-belts-link {
   width: 200px;
@@ -505,10 +523,42 @@ footer p {
   align-items: center;
   justify-content: center;
 }
-@media (320px <= width <= 640px) {
+@media (320px <= width <= 480px) {
   .shop-now,
   .leather-goods-container,
   .leather-belts-container {
     background-position: center bottom;
+  }
+}
+@media (480px <= width <= 960px) {
+  .shop-now,
+  .leather-goods-container,
+  .leather-belts-container {
+    max-width: 480px;
+    background-position: center bottom;
+  }
+  .logos {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .cart a {
+    font-size: 25px;
+  }
+  .shop-links a,
+  .faq a,
+  .social-links a {
+    font-size: 20px;
+  }
+  .tittle-logo {
+    font-size: 40px;
+  }
+  .shop-now-btn,
+  .shop-all-btn,
+  .tag-line > p,
+  .price-tag > p {
+    font-size: 20px;
+  }
+  .best-seller-header {
+    font-size: 25px;
   }
 }
