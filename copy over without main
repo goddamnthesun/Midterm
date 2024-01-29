@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./style-shop.css" />
+
     <title>Midterm</title>
   </head>
   <body>
@@ -120,136 +120,42 @@
       </div>
     </header>
     <main>
-      <div class="mini-menu-container">
-        <div class="mini-menu">
-          <a href="./index.html">Home</a>
-          <svg
-            width="16px"
-            height="20px"
-            viewBox="0 0 1024 1024"
-            class="icon"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#000000"
-            transform="rotate(180)"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"
-                fill="#000000"
-              ></path>
-            </g>
-          </svg>
-          <p>Bags</p>
+      <section class="additional-links">
+        <div class="additional-links-header">
+          <h2>adelene.</h2>
         </div>
-      </div>
-      <div class="one-big-grid">
-        <div class="empty">ㅤ</div>
-        <div class="side-bar-container">
-          <div class="side-bar-header"><h1>Browse by</h1></div>
-          <div class="smaller-header"><h2>All Products</h2></div>
-          <div class="product-links-container">
-            <ul class="product-links">
-              <li><a href="">Bags</a></li>
-              <li><a href="">Best Sellers</a></li>
-              <li><a href="">Leather Belts</a></li>
-              <li><a href="">Mini Leather Goods</a></li>
-              <li><a href="">Phone Cases</a></li>
-            </ul>
+        <ul class="shop-links">
+          <li><a href="">Shop All</a></li>
+          <li><a href="">Our Story</a></li>
+          <li><a href="">Our Craft</a></li>
+          <li><a href="">Gift Card</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="faq">
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Shipping & Returns</a></li>
+          <li><a href="">Store Policy</a></li>
+          <li><a href="">Payment Methods</a></li>
+          <li><a href="">Stockists</a></li>
+        </ul>
+        <ul class="social-links">
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Pinterest</a></li>
+        </ul>
+        <div class="join-us-form">
+          <div class="form-header"><h2>JOIN US !</h2></div>
+          <div class="form-container">
+            <form action="" method="post">
+              <div class="form-label"><label for="email">Email *</label></div>
+              <div class="form-input"><input type="email" id="email" /></div>
+              <button type="submit" class="send-btn">Send</button>
+            </form>
           </div>
         </div>
-        <div class="shop-header-container">
-          <div class="shop-header"><h1>Bags</h1></div>
-        </div>
-
-        <div class="shop-item-card">
-          <a href=""
-            ><img class="shop-item" src="./photos/shop-item-1.png" alt="bag" />
-            <div class="tag-price-container">
-              <div class="tag-line"><p>I'm a product</p></div>
-              <div class="price-tag"><p>$400</p></div>
-            </div></a
-          >
-        </div>
-        <div class="shop-item-card-two">
-          <a href=""
-            ><img class="shop-item" src="./photos/shop-item-2.png" alt="bag" />
-            <div class="tag-price-container">
-              <div class="tag-line"><p>I'm a product</p></div>
-              <div class="price-tag"><p>$400</p></div>
-            </div></a
-          >
-        </div>
-        <div class="shop-item-card-three">
-          <a href=""
-            ><img class="shop-item" src="./photos/shop-item-3.png" alt="bag" />
-            <div class="tag-price-container">
-              <div class="tag-line"><p>I'm a product</p></div>
-              <div class="price-tag"><p>$400</p></div>
-            </div></a
-          >
-        </div>
-        <div class="shop-item-card-four">
-          <a href=""
-            ><img class="shop-item" src="./photos/shop-item-1.png" alt="bag" />
-            <div class="tag-price-container">
-              <div class="tag-line"><p>I'm a product</p></div>
-              <div class="price-tag"><p>$400</p></div>
-            </div></a
-          >
-        </div>
-        <div class="shop-item-card-four">
-          <a href=""
-            ><img class="shop-item" src="./photos/shop-item-1.png" alt="bag" />
-            <div class="tag-price-container">
-              <div class="tag-line"><p>I'm a product</p></div>
-              <div class="price-tag"><p>$400</p></div>
-            </div></a
-          >
-        </div>
-      </div>
+      </section>
     </main>
-    <section class="additional-links">
-      <div class="additional-links-header">
-        <h2>adelene.</h2>
-      </div>
-      <ul class="shop-links">
-        <li><a href="">Shop All</a></li>
-        <li><a href="">Our Story</a></li>
-        <li><a href="">Our Craft</a></li>
-        <li><a href="">Gift Card</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-      <ul class="faq">
-        <li><a href="">FAQ</a></li>
-        <li><a href="">Shipping & Returns</a></li>
-        <li><a href="">Store Policy</a></li>
-        <li><a href="">Payment Methods</a></li>
-        <li><a href="">Stockists</a></li>
-      </ul>
-      <ul class="social-links">
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Pinterest</a></li>
-      </ul>
-      <div class="join-us-form">
-        <div class="form-header"><h2>JOIN US !</h2></div>
-        <div class="form-container">
-          <form action="" method="post">
-            <div class="form-label"><label for="email">Email *</label></div>
-            <div class="form-input"><input type="email" id="email" /></div>
-            <button type="submit" class="send-btn">Send</button>
-          </form>
-        </div>
-      </div>
-    </section>
     <footer>
       <p>©2035 by adalene. Powered and secured by Wix</p>
     </footer>

@@ -27,11 +27,206 @@
 }
 .shop-item-container {
 }
-.shop-item-card {
+.shop-item-card,
+.shop-item-card-two,
+.shop-item-card-three,
+.shop-item-card-four {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .shop-item {
   border-radius: 20px;
+}
+.side-bar-container {
+  display: none;
+}
+@media (1601px <= width) {
+  main {
+    margin: 0px 40px;
+  }
+  .mini-menu-container {
+    display: flex;
+    justify-content: start;
+  }
+  .side-bar-container {
+    width: 240px;
+    padding: 20px;
+    display: block;
+  }
+  .side-bar-header h1 {
+    font-family: var(--roboto);
+    font-size: 25px;
+    font-weight: 300;
+    padding: 0 0 16px;
+    border-bottom: 1px solid rgb(80, 78, 78);
+    margin-bottom: 15px;
+  }
+  .smaller-header h2 {
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 0 12px;
+  }
+  .product-links li {
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 0 12px;
+  }
+  .one-big-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 83px repeat(5, 1fr);
+    grid-template-areas:
+      "sidebar header empty empty empty"
+      "sidebar card card card card"
+      "sidebar card card card card"
+      "sidebar card card card card"
+      "sidebar card card card card"
+      "sidebar card card card card";
+
+    gap: 40px;
+  }
+  .side-bar-container {
+    grid-area: sidebar;
+  }
+  .shop-header-container {
+    height: 83px;
+  }
+  .empty {
+    grid-area: empty;
+  }
+  .shop-item-card {
+    grid-column: 2 / 3;
+  }
+  .card {
+    grid-area: card;
+  }
+}
+@media (1261px <= width <= 1600px) {
+  main {
+    margin: 0px 40px;
+  }
+  .mini-menu-container {
+    display: flex;
+    justify-content: start;
+  }
+  .side-bar-container {
+    width: 240px;
+    padding: 20px;
+    display: block;
+  }
+  .side-bar-header h1 {
+    font-family: var(--roboto);
+    font-size: 25px;
+    font-weight: 300;
+    padding: 0 0 16px;
+    border-bottom: 1px solid rgb(80, 78, 78);
+    margin-bottom: 15px;
+  }
+  .smaller-header h2 {
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 0 12px;
+  }
+  .product-links li {
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 0 12px;
+  }
+  .one-big-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr 1fr;
+    grid-template-rows: 83px repeat(5, 1fr);
+    grid-template-areas:
+      "sidebar header empty empty "
+      "sidebar card card card "
+      "sidebar card card card "
+      "sidebar card card card "
+      "sidebar card card card "
+      "sidebar card card card ";
+
+    gap: 40px;
+  }
+  .side-bar-container {
+    grid-area: sidebar;
+  }
+  .shop-header-container {
+    height: 83px;
+  }
+  .empty {
+    grid-area: empty;
+  }
+  .shop-item-card {
+    grid-column: 2 / 3;
+  }
+  .card {
+    grid-area: card;
+  }
+}
+@media (960px <= width <= 1260px) {
+  main {
+    margin: 0px 40px;
+  }
+  .mini-menu-container {
+    display: flex;
+    justify-content: start;
+  }
+  .side-bar-container {
+    width: 240px;
+    padding: 20px;
+    display: block;
+  }
+  .side-bar-header h1 {
+    font-family: var(--roboto);
+    font-size: 25px;
+    font-weight: 300;
+    padding: 0 0 16px;
+    border-bottom: 1px solid rgb(80, 78, 78);
+    margin-bottom: 15px;
+  }
+  .smaller-header h2 {
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 0 12px;
+  }
+  .product-links li {
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 0 12px;
+  }
+  .one-big-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr;
+    grid-template-rows: 83px repeat(5, 1fr);
+    grid-template-areas:
+      "sidebar header empty"
+      "sidebar card card"
+      "sidebar card card"
+      "sidebar card card"
+      "sidebar card card"
+      "sidebar card card";
+
+    gap: 40px;
+  }
+  .side-bar-container {
+    grid-area: sidebar;
+  }
+  .shop-header-container {
+    height: 83px;
+  }
+  .empty {
+    grid-area: empty;
+  }
+  .shop-item-card {
+    grid-column: 2 / 3;
+  }
+  .card {
+    grid-area: card;
+  }
 }
