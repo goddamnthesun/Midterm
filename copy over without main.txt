@@ -40,7 +40,7 @@
             <input type="search" id="site-search" placeholder="Search" />
           </div>
         </div>
-        <div class="nav-header">
+        <nav class="nav-header">
           <div class="icons">
             <ul class="icons-list">
               <li class="icons-list-items">
@@ -101,7 +101,7 @@
                 </span>
               </label>
             </div>
-          </div>
+          </nav>
         </div>
         <div class="tittle-logo-container">
           <a class="tittle-logo" href="./index.html">adelene.</a>
