@@ -41,6 +41,19 @@
 .side-bar-container {
   display: none;
 }
+main {
+  animation: fade ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (1601px <= width) {
   main {
     margin: 0px 40px;
