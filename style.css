@@ -157,6 +157,10 @@ li {
   font-family: var(--roboto);
   font-size: 14px;
 }
+.shop-now-btn:hover {
+  background-color: white;
+  color: black;
+}
 .best-seller-header-container {
   display: flex;
   justify-content: center;
@@ -251,6 +255,10 @@ li {
   padding: 15px 50px;
   margin-top: 50px;
   margin-bottom: 59px;
+}
+.shop-all-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 .other-example {
   display: grid;
@@ -534,6 +542,10 @@ li {
   background-color: white;
   font-family: var(--roboto);
   font-size: 14px;
+}
+.send-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 input[type="email"]:focus {
   width: 260px;
